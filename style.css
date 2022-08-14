@@ -1,0 +1,72 @@
+
+html, body, [class*="css"]  {
+    font-family:-apple-system;
+    color: dimgrey;
+}
+
+.streamlit-expander {
+    border-color:rgb(140, 138, 138);
+    border-radius: 20px;
+}
+
+.streamlit-expander {
+    border-color:rgb(140, 138, 138);
+    border-radius: 20px;
+}
+
+.streamlit-expanderHeader {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color:teal;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.streamlit-expanderHeader:hover {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: palevioletred;
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.stButton button {
+    border:none;
+    margin: auto;
+}
+
+.stButton button:hover {
+    border:none;
+    margin: auto;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.stButton button:focus{
+    border:none;
+    margin: auto;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.stDataFrame {
+    margin: auto;
+}
+
+div.stSelectbox div {
+    border-radius: 20px;
+}
+
+div[data-testid='stFileUploader'] label {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+div [data-testid="stText"] {
+    font-size: 40px;
+    font-weight: 1000;
+    font-family: Arial;
+    color: rgb(132, 192, 194);
+}
