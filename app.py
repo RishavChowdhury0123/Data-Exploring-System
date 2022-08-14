@@ -385,6 +385,9 @@ def model(X_train, y_train, X_test, y_test, kind, model_dict):
     from sklearn.pipeline import Pipeline
     from sklearn.preprocessing import StandardScaler
     cv_results= pd.DataFrame()
+    
+    prg= st.progress(0)
+    prg_it=0
     for model_name, est in model_dict.items():
         if kind is 'reg':
             metrics= ('r2', 'neg_mean_squared_error')
@@ -402,7 +405,9 @@ def model(X_train, y_train, X_test, y_test, kind, model_dict):
         cols.extend(results.columns)
         results['Model']= model_name
         cv_results= cv_results.append(results, ignore_index=True)
-
+        prg_it+=1
+        prg.progress(prg_it/len(model_dict))
+        
     return shuffle(cv_results).reset_index(drop=True)[cols]
     
 def plot_model_results(results, kind):
