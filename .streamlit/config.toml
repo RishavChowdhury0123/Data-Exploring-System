@@ -1,3 +1,4 @@
 [theme]
-
+base='light'
 backgroundColor = '#d8dce3'
+secondaryBackgroundColor="#d8dce3"
