@@ -43,8 +43,8 @@ def configure_rcparams():
     rcParams['grid.linestyle']='--'
     rcParams['grid.color']='grey'
     rcParams['grid.alpha']= 0.3
-    rcParams['figure.facecolor']='#f0ebdf'
-    rcParams['axes.facecolor']='#f0ebdf'
+    rcParams['figure.facecolor']='#d8dce3'
+    rcParams['axes.facecolor']='#d8dce3'
 
 def initialize_keys():
     if 'nrows' not in st.session_state:
